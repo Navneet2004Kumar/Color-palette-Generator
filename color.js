@@ -20,7 +20,7 @@ function generateColors() {
 
     colorBox.innerHTML = `<span>${color}</span><div class="tooltip">Copied!</div>`;
 
-    // Click to copy
+  
     colorBox.addEventListener('click', () => {
       navigator.clipboard.writeText(color);
       colorBox.classList.add('copied');
@@ -31,5 +31,6 @@ function generateColors() {
   }
 }
 
-// Generate palette on page load
+
 window.onload = generateColors;
+
